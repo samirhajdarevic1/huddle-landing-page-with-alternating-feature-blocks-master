@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open sans', sans-serif;
+}
+main {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.main-div {
+    text-align: center;
+    margin: 0 15px;
+}
+.first-part {
+    background: url("images/bg-hero-mobile.svg") no-repeat;
+    margin-bottom: 30px;
+}
+.logo-free {
+    display: grid;
+    grid-template-columns: 234px 94px;
+    grid-template-rows: 24px;
+    padding: 10px;
+}
+.little-button {
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+}
+.first-part h2 {
+    padding: 0 22px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.first-part p {
+    padding: 0 34px;
+    font-size: 18px;
+    font-weight: normal;
+}
+.main-button {
+    border-radius: 20px;
+    background: hsl(322, 100%, 66%);
+    color: white;
+    border: none;
+    width: 247px;
+    height: 39px;
+    margin: 35px 35px;
+}
+
+
+.second-part {
+    background: white;
+    margin: 0px 4px;
+    padding: 55px 10px 28px 9px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 9%);
+}
+.third-part {
+    background: white;
+    margin: 0px 4px;
+    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 9%);
+    padding: 55px 10px 28px 9px;
+    margin-bottom: 30px;
+}
+.fourth-part {
+    background: white;
+    margin: 0px 4px;
+    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 9%);
+    padding: 55px 16px 29px 16px;
+    margin-bottom: 30px;
+}
+
+.fifth-part {
+    background: white;
+    border-radius: 10px;
+    position: relative;
+    top: 58px;
+    width: 352px;
+    padding: 20px;
+    margin: 0 12px;
+    text-align: center;
+    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 9%);
+}
+.fifth-part button {
+    border-radius: 20px;
+    background: hsl(322, 100%, 66%);
+    color: white;
+    border: none;
+    width: 247px;
+    height: 44px;
+    margin: 11px 0;
+}
+.sixth-part {
+    background: black;
+    color: white;
+    padding: 91px 19px;
+}
+.informations {
+    display: grid;
+    grid-template-columns: 47px 266px;
+    align-items: baseline;
+}
+.links {
+    text-align: center;
+}
+
+
+
+@media (min-width: 376px) {
+    .main-div {
+        display: grid;
+        justify-content: center;
+    }
+    .first-part {
+        background: url("images/bg-hero-desktop.svg") no-repeat;
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: 578px 450px;
+    }
+    .logo-free {
+        display: grid;
+        grid-template-columns: 850px 94px;
+        grid-template-rows: 24px;
+        padding: 10px;
+        grid-column: 1/span 2;
+        margin-bottom: 60px;
+    }
+    .first-part h2 {
+        padding-right: 250px;
+    }
+    .first-part p {
+        text-align: left;
+    }
+    .first-image {
+        grid-column: 2/3;
+        grid-row: 2/5;
+        width: 431px;
+        height: 326px;
+    }
+    
+    .second-part {
+        display: grid;
+        grid-template-columns: 450px 450px;
+        justify-content: center;
+    }
+    .second-image {
+        grid-row: 1/3;
+        grid-column-start: 2;
+    }
+    .third-part {
+        display: grid;
+        grid-template-columns: 450px 450px;
+        justify-content: center;
+    }
+    .third-image {
+        grid-row: 1/3;
+        width: 416px;
+    }
+    .fourth-part {
+        display: grid;
+        grid-template-columns: 450px 450px;
+    }
+    .fourth-image {
+        grid-row: 1/3;
+        width: 410px;
+    }
+    .fifth-part {
+        margin: auto;
+    }
+    .sixth-part {
+        display: grid;
+        grid-template-columns: 401px 168px 113px 349px;
+    }
+    .bottom-logo {
+        grid-column: 1/span 4;
+    }
+    .informations {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .links {
+        width: 343px;
+    }
+    .copyright {
+        padding-top: 151px;
+    }
+
+
+}
